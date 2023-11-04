@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booksky</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@500&family=Roboto&display=swap" rel="stylesheet"></head>
+<body>
+    <div class="navbar">
+        <h1>Booksky</h1>
+    </div>
+    <div class="container">
+        <div class="book-container">
+            <h2>The Girl On the Train</h2>
+            <h5>Paula Hawkins</h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus ipsa maxime temporibus ex sequi voluptatem minima fugiat nesciunt numquam molestias. Officiis praesentium ut sint mollitia recusandae nostrum architecto! Repudiandae, qui.</p>
+            <button onclick="deleteBook(event)">delete</button>
+        </div>
+    </div>
+    <button class="add-button" id="add-popup-btn" onclick="showpop()">+</button>
+    <div class="overlay"></div>
+
+    <div class="popup-box">
+        <h2>Title</h2>
+        <form>
+            <input type="text" placeholder="Book Title" id="book-title-input">
+            <input type="text" placeholder="Book Author" id="book-author-input">
+            <textarea placeholder="short-description" id="book-description-input"></textarea>
+
+        </form>
+        <button id="add-book">Add</button>
+<button id="cancel-popup">Cancel</button>    </div>
+    <script src="script.js"></script>
+</body>
+</html>
